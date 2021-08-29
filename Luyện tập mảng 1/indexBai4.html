@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--Viết chương trình khởi tạo/nhập vào một mảng số nguyên và đảo ngược các phần tử trong mảng đó.-->
+<script>
+    let sample = [1,20,46,41,36,78,12,47,68,65];
+    let newSample=[];
+    let n=sample.length;
+    for (let i = 0; i < n ; i++) {
+        newSample[i]=sample[n-1-i]
+    }
+    document.write(newSample);
+</script>
+</body>
+</html>

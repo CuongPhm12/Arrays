@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--Viết chương trình khởi tạo/nhập vào 2 mảng số nguyên gồm 10 phần tử, gọi là mảng a và b.
+ Mảng c là một mảng được khai báo gồm 20 phần tử số nguyên.
+ Chương trình sẽ lưu các phần tử được nối từ hai mảng b và a vào mảng c. Hiển thị mảng c.-->
+<script>
+    let a = [1,20,46,41,36,78,12,47,68,65];
+    let b = [-1,5,54,759,-6,45,79,-36,64,52];
+    let c = [];
+    for (let i = 0; i < a.length; i++) {
+        c.push(a[i]);
+    }
+    for (let i = 0; i < b.length; i++) {
+        c.push(b[i]);
+    }
+    document.write(c);
+</script>
+</body>
+</html>

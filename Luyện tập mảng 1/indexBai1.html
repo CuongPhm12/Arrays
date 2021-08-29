@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--Viết chương trình khởi tạo mảng số nguyên gồm 10 phần tử.
+Chương trình thực hiện tính và hiển thị xem có bao nhiêu số nguyên lớn hơn hoặc bằng 10.-->
+<script>
+    let sample = [];
+    let count = 0;
+    let newSample =[];
+    for (let i = 8; i < 18; i++) {
+        sample.push(i);
+    }
+    document.write(sample);
+    for (let i = 0; i < sample.length; i++) {
+        if (sample[i]>=10){
+            count+=1;
+            newSample.push(sample[i]+",");
+        }
+    }
+    document.write("<br>Số lượng số nguyên lớn hơn hoặc bằng 10 trong mảng này là "+ count);
+
+
+
+</script>
+</body>
+</html>

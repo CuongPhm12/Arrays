@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--Viết chương trình khởi tạo/nhập vào một mảng số nguyên gồm 10 phần tử.
+Chương trình sắp xếp mảng theo thứ tự giảm dần và hiển thị ra mảng đã được sắp xếp.-->
+<script>
+  let sample = [-1,5,54,759,-6,45,79,-36,64,52];
+  let n = sample.length;
+  for (let i = 0; i <n; i++) {
+    for (let j = 0; j < n; j++) {
+      if(sample[j]<sample[j+1]){
+        let temp = sample[j];
+        sample[j] = sample[j+1];
+        sample[j+1] = temp;
+      }
+    }
+  }
+  document.write(sample);
+</script>
+</body>
+</html>
