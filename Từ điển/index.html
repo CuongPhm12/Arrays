@@ -6,6 +6,27 @@
 </head>
 <body>
 <script>
+let vie = ["dứa","bơ","tâm"];
+let eng = ["pineapple","avocado","heart"];
+function translate() {
+    let words = prompt("Please insert any words by Vietnamese");
+    let index = -1;
+    for (let i = 0; i < vie.length; i++) {
+        if (vie[i]===words) {
+            index = i;
+            break;
+        }
+    }
+
+if (index === -1){
+            alert("i dont know the meaning of this word ");
+        }else {
+    alert(words + " is meaning " + eng[index]);
+}
+}
+translate()
+
+
 
 </script>
 </body>
