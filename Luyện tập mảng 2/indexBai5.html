@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--Viết một chương trình nhập vào 2 chuỗi, sau đó kiểm tra xem hai chuỗi có giống nhau hay không.-->
+<script>
+    let a = [1,20,46,41,36,78,12,47,68,65];
+    let b = [-1,5,54,759,-6,45,79,-36,64,52];
+    let check = true
+    if(a.length !== b.length){
+        check = false;
+    } else {
+        for (let i = 0; i < b.length; i++) {
+            if(a[i] !== b[i]){
+                check = false;
+            }
+        }
+    }
+    if(check === false){
+    document.write("2 chuỗi khác nhau");
+    }else{
+    "2 chuỗi giống nhau";
+    }
+</script>
+</body>
+</html>
